@@ -59,12 +59,7 @@ if [ ! -d "$PROJECT_DIR" ]; then
     exit 1
 fi
 
-# ПРОВЕРКА: Установлен ли Git вообще
-if ! command -v git &> /dev/null; then
-    echo "ОШИБКА: Git не установлен в системе!"
-    echo "Установите: sudo apt install git"
-    exit 1
-fi
+
 
 # Проверяем Git-репозиторий
 if [ ! -d "$PROJECT_DIR/.git" ]; then
